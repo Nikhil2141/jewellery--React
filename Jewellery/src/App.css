@@ -1,0 +1,801 @@
+@font-face {
+  font-family: Electra LT Std;
+  src: url(Font/Electra\ LT\ Std\ Regular.otf);
+}
+
+.container {
+  max-width: 1440px;
+  height: auto;
+  margin: auto;
+  display: block;
+  justify-content: center;
+}
+
+.header {
+  margin-top: 28px;
+  margin-bottom: 28px;
+  margin-left: 64px;
+  margin-right: 64px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: rgba(255, 255, 255, 1);
+}
+
+.nav-list {
+  margin-left: 0px;
+
+  display: flex;
+  letter-spacing: 2px;
+  line-height: 25.6px;
+  justify-content: space-around;
+  gap: 50px;
+  font-family: Questrial;
+  font-size: 14px;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: rgba(0, 0, 0, 1);
+  list-style: none;
+}
+li {
+  cursor: pointer;
+}
+.arrow {
+  display: inline;
+  vertical-align: middle;
+}
+
+.cart-icons {
+  display: flex;
+  justify-content: space-between;
+  gap: 24px;
+  cursor: pointer;
+}
+
+.slide-text {
+  max-width: 1440px;
+  height: auto;
+  margin: auto;
+  display: block;
+  justify-content: center;
+}
+.slide {
+  height: 616px;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.slide-text {
+  letter-spacing: 1px;
+  padding-left: 145.89px;
+  padding-top: 132.23px;
+}
+
+.heading-large {
+  font-family: Questrial;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 25px;
+  margin-bottom: 0px;
+}
+
+.heading-xlarge {
+  font-family: Electra LT Std;
+  font-weight: 700;
+  font-size: 100px;
+  margin-top: 29.16px;
+  line-height: 100px;
+  margin-bottom: 0px;
+  color: rgba(0, 0, 0, 1);
+}
+
+.heading-medium {
+  font-family: Questrial;
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 48px;
+  margin-top: 20px;
+  margin-bottom: 88px;
+}
+.shop-button {
+  border: 1px solid rgba(0, 0, 0, 1);
+  font-family: Questrial;
+  font-weight: 400;
+  color: rgba(0, 0, 0, 1);
+  letter-spacing: normal;
+  font-size: 24px;
+  padding-top: 24px;
+  padding-bottom: 24px;
+  padding-left: 32px;
+  padding-right: 32px;
+  line-height: 32px;
+  cursor: pointer;
+}
+
+.features-section {
+  background-color: rgba(250, 248, 238, 1);
+  margin-top: 0px;
+}
+
+.features {
+  display: flex;
+  background-color: rgba(250, 248, 238, 1);
+  font-family: Questrial;
+  justify-content: space-around;
+  font-size: 14px;
+  font-weight: 400;
+  padding: 32px;
+}
+
+.feature-item {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  font-family: Questrial;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 25.6px;
+}
+
+.category-section {
+  margin-left: 120px;
+  margin-right: 120px;
+}
+
+.category-title {
+  text-align: center;
+  padding-top: 64px;
+  font-family: Electra LT Std;
+  font-weight: 400;
+  font-size: 40px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding-bottom: 64px;
+  line-height: 48.01px;
+
+  color: rgba(0, 0, 0, 1);
+}
+.product-name,
+.product-count {
+  font-family: Questrial;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  margin-bottom: 0px;
+}
+.product-name {
+  margin-top: 3px;
+}
+
+.product-price {
+  margin-top: 2px;
+}
+.product-price,
+.product-category {
+  font-family: Questrial;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 27.52px;
+  margin-bottom: 0px;
+}
+
+.product-count {
+  margin-top: 4px;
+}
+
+.product-category {
+  margin-top: 5px;
+}
+
+.dot {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.dot1 {
+  width: 18.4px;
+  height: 18.4px;
+  border: 1px solid rgba(0, 0, 0, 0.5);
+  border-radius: 50%;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.dot1-1 {
+  width: 12.88px;
+  height: 12.88px;
+  background: rgba(242, 228, 164, 1);
+  border-radius: 50%;
+}
+
+.dot2 {
+  width: 20px;
+  height: 20px;
+  background-color: rgba(232, 166, 157, 1);
+  border-radius: 50%;
+  display: inline-block;
+}
+.image-container {
+  position: relative;
+  width: 100%;
+}
+.sale {
+  position: absolute;
+
+  bottom: 8.02px;
+  left: 7.5px;
+  background-color: rgba(0, 0, 0, 1);
+  color: rgba(255, 255, 255, 1);
+  font-family: Assistant;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 17px;
+  border-radius: 99px;
+  z-index: 10;
+  padding: 4px 12px 4px 12px;
+}
+
+.thirdpage {
+  background-color: rgba(250, 248, 238, 1);
+}
+
+.Product-img {
+  margin-left: 184.11px;
+  margin-right: 184.11px;
+  padding-top: 64px;
+  padding-bottom: 64px;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  column-gap: 10px;
+}
+
+.product-chain-bracelets,
+.product-earrings,
+.product-necklaces {
+  display: flex;
+  flex-direction: column;
+  margin-top: 5px;
+}
+
+.product-box .slick-next {
+  top: 35%;
+  padding-right: 35px;
+}
+.product-box .slick-prev {
+  top: 35%;
+  padding-left: 30px;
+}
+
+.product-box .product-grid {
+  padding-left: 64px;
+  padding-right: 64px;
+}
+
+.fifth-page {
+  background-color: rgba(134, 75, 72, 1);
+  position: relative;
+  display: flex;
+}
+.text-section {
+  max-width: 1440px;
+  height: auto;
+  align-items: center;
+  align-content: center;
+  display: block;
+  justify-content: center;
+}
+
+.text-section {
+  margin-left: 64px;
+  margin-top: 73.83px;
+  width: 780px;
+
+  z-index: 1;
+  color: rgba(255, 255, 255, 1);
+  padding-bottom: 97px;
+}
+
+.main-text {
+  font-family: Questrial;
+  font-size: 26px;
+  font-weight: 400;
+  line-height: 28.6px;
+  letter-spacing: 0.08px;
+  text-transform: uppercase;
+}
+
+.sub-text {
+  font-family: Electra LT Std;
+  font-size: 60px;
+  font-weight: 400;
+  line-height: 68px;
+  letter-spacing: 0.08px;
+  margin-top: 16px;
+  width: 784px;
+  text-transform: uppercase;
+}
+
+.img5 {
+  position: absolute;
+  right: 0px;
+}
+
+.description-text {
+  font-family: Questrial;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0.08px;
+  margin-top: 4px;
+  margin-bottom: 48px;
+}
+
+.Explore-button {
+  font-family: Questrial;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 1px;
+  padding-top: 16.81px;
+  padding-left: 32px;
+  padding-right: 32px;
+  padding-bottom: 16.5px;
+  border: 2px solid rgba(255, 255, 255, 1);
+  border-radius: 2px;
+  color: rgba(134, 75, 72, 1);
+  background-color: rgba(255, 255, 255, 1);
+  cursor: pointer;
+}
+
+.neckbox {
+  text-align: center;
+  padding-top: 64px;
+  padding-bottom: 64px;
+}
+
+.maintxt {
+  font-family: Electra LT Std;
+  font-weight: 400;
+  font-size: 40px;
+  margin-bottom: 32px;
+
+  line-height: 48.01px;
+
+  color: rgba(0, 0, 0, 1);
+}
+
+.secondtxt {
+  font-family: Questrial;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 25.6px;
+  text-align: center;
+
+  text-transform: uppercase;
+}
+
+.images {
+  display: flex;
+  margin-left: 64px;
+  margin-right: 64px;
+  column-gap: 10px;
+}
+
+.img2-2 {
+  margin-top: 10px;
+}
+
+.necktxt,
+.ringtxt,
+.bracelet {
+  background-color: rgba(240, 240, 240, 1);
+  gap: 8px;
+  font-family: Questrial;
+  font-weight: 400;
+  padding: 14px;
+  font-size: 14px;
+}
+span {
+  display: inline-flex; /* Aligns text and image in a row */
+  align-items: center;
+  gap: 6px;
+  cursor: pointer;
+}
+.bracelet {
+  padding: 13.5px;
+}
+
+.p7 {
+  margin-top: 64px;
+  width: 100%;
+}
+
+.heading {
+  margin-top: 64px;
+  font-family: Electra LT Std;
+  font-weight: 400;
+  font-size: 40px;
+  text-align: center;
+  line-height: 48.01px;
+  color: rgba(0, 0, 0, 1);
+}
+
+.maincontainer {
+  margin-top: 64px;
+  display: flex !important;
+  justify-content: center;
+}
+
+.imgbox {
+  max-width: 100%;
+}
+
+.textbox {
+  width: 536px !important;
+  padding-top: 32px;
+}
+
+.text7-1 {
+  padding-right: 32px;
+  padding-left: 32px;
+  font-family: Questrial;
+  font-size: 30px;
+  font-weight: 400;
+  line-height: 30.9px;
+  color: rgba(0, 0, 0, 1);
+  margin-bottom: 0px;
+}
+
+.text7-2 {
+  font-family: Questrial;
+  font-size: 17px;
+  padding-left: 32px;
+  font-weight: 400;
+  line-height: 17.51px;
+  color: rgba(0, 0, 0, 1);
+  margin-top: 16px;
+  margin-bottom: 0px;
+}
+
+.text7-3 {
+  font-family: Questrial;
+  font-size: 16px;
+  font-weight: 400;
+  padding-left: 32px;
+  padding-right: 32px;
+  line-height: 27.52px;
+  letter-spacing: 0.64px;
+  margin-top: 16px;
+  padding-bottom: 100px;
+}
+
+.text7-4 {
+  font-family: Assistant;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 17px;
+  letter-spacing: 0.48px;
+  padding-left: 32px;
+  margin-bottom: 0px;
+}
+
+.plusbox {
+  display: flex;
+  width: 138px;
+  height: 44px;
+  gap: 10px;
+  margin-top: 12px;
+  margin-left: 32px;
+  border: 1px solid rgba(208, 208, 208, 1);
+  justify-content: space-evenly;
+  align-items: center;
+  cursor: pointer;
+}
+
+.btn {
+  margin-left: 32px;
+  display: flex;
+  margin-top: 16px;
+}
+
+.add {
+  border: 1px solid rgba(0, 0, 0, 1);
+  padding-top: 16px;
+  padding-right: 76.5px;
+  padding-bottom: 16px;
+  padding-left: 76.5px;
+  cursor: pointer;
+  font-family: Assistant;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 15px;
+  letter-spacing: 0.04em;
+}
+
+.buy {
+  border: 1px solid rgba(0, 0, 0, 1);
+  padding-top: 16px;
+  padding-right: 76.5px;
+  padding-bottom: 16px;
+  padding-left: 76.5px;
+  background-color: rgba(0, 0, 0, 1);
+  color: rgba(255, 255, 255, 1);
+  font-family: Assistant;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 15px;
+  letter-spacing: 0.04em;
+  margin-left: 8px;
+  cursor: pointer;
+}
+
+.feedback {
+  background-color: rgba(250, 248, 238, 1);
+  text-align: center;
+  padding-right: 0px !important;
+}
+.feedheading {
+  font-family: Electra LT Std;
+  font-size: 40px;
+  font-weight: 400;
+  line-height: 48.01px;
+  text-align: center;
+  padding-top: 64px;
+}
+.review {
+  margin-top: 64px;
+
+  padding-bottom: 64px;
+  position: relative;
+}
+.feedtxt {
+  font-family: Questrial;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 25.6px;
+  text-align: center;
+  margin-bottom: 0px;
+  margin-top: 0px;
+  padding-left: 237.82px;
+  padding-right: 237.82px;
+}
+
+.rating {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 24px;
+  gap: 16px;
+}
+.review-name {
+  margin-top: 0px;
+  padding-top: 32px;
+  font-family: Questrial;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 18px;
+  text-align: center;
+}
+
+.lastpage {
+  background-color: black;
+  color: white;
+}
+.contactpage {
+  display: flex;
+  justify-content: center;
+  padding-top: 61.3px;
+  padding-left: 64px;
+
+  padding-right: 64px;
+  column-gap: 48px;
+}
+
+li {
+  list-style: none;
+}
+
+.block2 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.t1 {
+  font-family: Questrial;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+  padding-bottom: 17px;
+}
+
+.t2 {
+  font-family: Questrial;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 25.6px;
+}
+
+.icon {
+  margin-top: 35.11px;
+  display: flex;
+  gap: 16px;
+}
+
+.aboutus {
+  max-width: 512px;
+}
+
+.block2 {
+  max-width: 752px;
+}
+
+.headtxt,
+.collectionhead {
+  font-family: Questrial;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+  margin-bottom: 17.2px;
+}
+
+.quick-links {
+  font-family: Questrial;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 25.6px;
+}
+
+.collection {
+  font-family: Questrial;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 25.6px;
+}
+
+.txt1 {
+  font-family: Questrial;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+  text-transform: uppercase;
+  padding-bottom: 20px;
+}
+
+.txt2 {
+  font-family: Questrial;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 23.1px;
+  padding-bottom: 20px;
+  color: rgba(255, 255, 255, 1);
+}
+
+.input {
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  background: transparent;
+
+  padding-top: 13px;
+  padding-right: 134px;
+  padding-left: 15px;
+  padding-bottom: 13px;
+}
+
+::placeholder {
+  font-family: Questrial;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 19px;
+  color: rgba(255, 255, 255, 1);
+}
+
+.subscribe {
+  margin-top: 20px;
+  padding-top: 15px;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-bottom: 15px;
+  font-family: Questrial;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 15px;
+  letter-spacing: 2.4000000953674316px;
+  text-align: center;
+  text-transform: uppercase;
+  background-color: white;
+  color: black;
+}
+.fblogo,
+.instalogo {
+  cursor: pointer;
+}
+
+.lasttxt {
+  margin-top: 96px;
+  background-color: rgba(0, 0, 0, 1);
+  text-align: center;
+  font-family: Questrial;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 19.2px;
+  padding-bottom: 32px;
+
+  color: rgba(165, 165, 165, 1);
+}
+.page-neck .slick-dots {
+  margin-top: 28px !important;
+}
+.slick-dots {
+  position: static !important;
+  margin-top: 1.04px !important ;
+}
+.slick-slider {
+  padding-bottom: 48px;
+}
+
+.custom-arrow {
+  position: absolute;
+  top: 35%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  z-index: 1;
+}
+
+.next-arrow {
+  right: -50px;
+}
+
+.prev-arrow {
+  left: -50px;
+}
+
+.mainslide-next {
+  right: 64px;
+  top: 50%;
+}
+
+.mainslide-prev {
+  left: 64px;
+  top: 50%;
+}
+.feedback-next {
+  right: 128px;
+}
+
+.feedback-prev {
+  padding-left: 128px;
+}
+
+.bgimg {
+  padding-bottom: 0px;
+}
+.sale-price {
+  text-decoration: line-through red;
+  color: red;
+  padding-right: 10px;
+}
+
+.cart-container {
+  margin: 50px;
+}
+
+.cart-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 10px;
+}
+
+.cart-table th,
+.cart-table td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: center;
+}
+
+.cart-table th {
+  background-color: #f4f4f4;
+  font-weight: bold;
+}
+.cart-item {
+  display: flex;
+}
