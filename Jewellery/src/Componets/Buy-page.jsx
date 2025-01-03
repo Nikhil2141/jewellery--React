@@ -14,19 +14,18 @@ export default function Buypage() {
 
 
   const handleAddToCart = (id, image, name, price) => {
-    alert("Item added to cart!");
-const existingItem = CartItems.find(product => product.data.id === id);
+   const existingItem = CartItems.find((product) => product.id === id);
 
     if (existingItem) {
       existingItem.quantity += quantity; 
       setItems([...CartItems]); 
-      console.log(CartItems)
+  
     } else {
-      const obj = [ id, image, name, price ]; // New item added
+      const obj = {id, image, name, price }; // New item added
       setItems([...CartItems, obj]);
-      console.log(CartItems)
+      // console.log(obj)
     }
- 
+    console.log(CartItems)
   };
 
   const handleplus = () => setquantity(quantity + 1);
@@ -45,17 +44,17 @@ const existingItem = CartItems.find(product => product.data.id === id);
       <div className="heading">Product Of the Month</div>
       <Slider {...settings}>
         {products.map((product) => (
-          <div key={product.data.id} className="maincontainer">
+          <div key={product.id} className="maincontainer">
             <div>
               <img
                 className="imgbox"
-                src={product.data.image}
-                alt={product.data.name}
+                src={product.image}
+                alt={product.name}
               />
             </div>
             <div className="textbox">
-              <p className="text7-1">{product.data.name}</p>
-              <p className="text7-2">RS. {product.data.price}</p>
+              <p className="text7-1">{product.name}</p>
+              <p className="text7-2">RS. {product.price}</p>
               <p className="text7-3">
                 Whimsical jewellery that will look extra adorable when you wear
                 it. This design is so cute and easy to wear, you will never want
@@ -81,10 +80,10 @@ const existingItem = CartItems.find(product => product.data.id === id);
                     onClick={() =>
                       handleAddToCart(
                         
-                        product.data.id,
-                        product.data.image,
-                        product.data.name,
-                        product.data.price
+                        product.id,
+                        product.image,
+                        product.name,
+                        product.price
                       )
                     }
                   >
