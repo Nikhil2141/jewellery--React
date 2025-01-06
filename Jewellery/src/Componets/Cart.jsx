@@ -1,11 +1,12 @@
 import PropTypes from "prop-types";
 
 Cart.propTypes = {
-  CartItems: PropTypes.array, // Validate CartItem as an array
-  setItems: PropTypes.func,   // Validate setItem as a function
+  CartItems: PropTypes.any, // Validate CartItem as an array
 };
 
 export function Cart({ CartItems }) {
+  console.log({CartItems});
+  
   return (
     <div className="cart-container">
       <h2>Shopping Cart</h2>
@@ -21,16 +22,21 @@ export function Cart({ CartItems }) {
               </tr>
             </thead>
             <tbody>
+
+<div>
+  <p>Name:{CartItems.name}</p>
+</div>
+
            
               {CartItems.map((product) => (
-                <tr key={product.data.id}>
+                <tr key={product.id}>
                   <td>
-                    <img src={product.data.image} alt={product.data.name} width="50" height="50" />
-                    {product.data.name}
+                    <img src={product.id} alt={product.name} width="50" height="50" />
+                    {product.name}
                   </td>
-                  <td>RS. {product.data.price}</td>
-                  <td>{product.data.quantity}</td>
-                  <td>RS. {product.data.price * product.data.quantity}</td>
+                  <td>RS. {product.price}</td>
+                  <td>{product.quantity}</td>
+                  <td>RS. {product.price * product.quantity}</td>
                 </tr>
               ))}
             </tbody>

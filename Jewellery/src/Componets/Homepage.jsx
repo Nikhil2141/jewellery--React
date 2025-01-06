@@ -1,3 +1,4 @@
+import PropTypes from "prop-types";
 import Buypage from "./Buy-page";
 import Contactpage from "./Contactpage";
 import Earring_Selection from "./Earring-Selection";
@@ -10,7 +11,12 @@ import Ring_Selection from "./Ring-Selection";
 import Selection from "./Selection";
 import SimpleSlider from "./Simpleslider";
 
-function Home() {
+Home.propTypes = {
+  CartItems: PropTypes.any, // Validate CartItem as an array
+  setCartItems: PropTypes.any, // Validate setItem as a function
+};
+
+function Home({CartItems,setCartItems}) {
   return (
     <>
       <Header />
@@ -20,7 +26,7 @@ function Home() {
       <Selection />
       <Earring_Selection />
       <Product_Selection />
-      <Buypage />
+      <Buypage  CartItems={CartItems} setCartItems={setCartItems}/>
       <Ring_Selection />
       <Feedback />
       <Contactpage />

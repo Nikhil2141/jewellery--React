@@ -2,14 +2,18 @@ import { useState } from "react";
 import PropTypes from "prop-types";
 import Slider from "react-slick";
 import products from "../utlis/data";
+import { useNavigate } from "react-router";
 
 Buypage.propTypes = {
   CartItems: PropTypes.array, // Validate CartItem as an array
-  setItems: PropTypes.func, // Validate setItem as a function
+  setCartItems: PropTypes.func, // Validate setItem as a function
 };
 
-export default function Buypage() {
-  const [CartItems, setItems] = useState([]);
+export default function Buypage({
+  CartItems,
+setCartItems
+}) {
+  const navigate = useNavigate();
   const [quantity, setquantity] = useState(1);
 
 
@@ -18,14 +22,14 @@ export default function Buypage() {
 
     if (existingItem) {
       existingItem.quantity += quantity; 
-      setItems([...CartItems]); 
+      setCartItems([...CartItems]); 
   
     } else {
       const obj = {id, image, name, price }; // New item added
-      setItems([...CartItems, obj]);
-      // console.log(obj)
+      setCartItems([...CartItems, obj]);
+      
+      navigate("/cart");
     }
-    console.log(CartItems)
   };
 
   const handleplus = () => setquantity(quantity + 1);
@@ -75,14 +79,13 @@ export default function Buypage() {
                 </div>
                 <div className="btn">
                   <a
-                    // href="/cart"
+                 
                     className="add"
                     onClick={() =>
                       handleAddToCart(
-                        
-                        product.id,
                         product.image,
                         product.name,
+                        product.id,
                         product.price
                       )
                     }
